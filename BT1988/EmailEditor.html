@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    a{
+        margin-left: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: x-large;
+        text-decoration: none;
+        color: black;
+    }
+    .main{
+    background-color: rgb(255,255,240);   
+    margin-left: 20%;
+    }
+    form{
+        background-color: rgb(157, 243, 214);
+        width: 60vw ;
+    }
+    textarea{
+        overflow-y: scroll;
+        resize: none;
+        scrollbar-3dlight-color: #c0c0c0;
+        scrollbar-shadow-color: silver;
+        scrollbar-arrow-color: black;
+        scrollbar-face-color: gray;
+        background-color: #FFFFDD;
+        width: 400px;
+        height: 150px;
+        box-shadow: -2px -2px white;
+    }
+    
+    img{
+        height: 50px;
+        width: 50px;
+        margin-left: 15vw;
+    }
+    img cursor{
+
+    }
+    input{
+        margin-left: 15px;
+        width: 200px;
+        margin: auto auto;
+        background-color: #FFFFDD;
+        box-shadow: -2px -2px white;
+    }
+    label{
+        margin-left: 15px;
+        
+    }
+    button{
+        margin-right: 2.25%;
+    }
+</style>
+<body class="main">
+    <div>
+        <form action="Status.html">
+            <a href="">Compose e-mail message</a>
+            <a href="Help.html"><img src="https://cdn-icons-png.flaticon.com/512/7498/7498864.png" ><br>
+            </a>
+            <br>      
+            <div style="display: grid; grid-template-columns: repeat(3, 110px); ">
+            <div style="text-align: end;width: 100px;display: flex;flex-direction: column;row-gap: 6.5px; ">
+                <label >To: </label>
+                <label for="">From:</label>
+                <label for="">CC:</label>
+                <label for="">Subject:</label>
+                <label for="">Message:</label>
+            </div>
+            <div style="display: flex;flex-direction: column;row-gap: 3.5px;">
+                <input type="email"> 
+                <input type="email">           
+                <input type="text" >         
+                <input type="text" >           
+                <textarea></textarea>
+                <div>
+                <button>Send</button><button>Cancel</button></div> 
+            </div></div>
+            
+        </form>
+    </div>
+</body>
+</html>
